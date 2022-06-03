@@ -1,0 +1,273 @@
+
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* ნავ-ბარი */
+
+.logo a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+.logo a:hover{
+    color: black;
+}
+.fa-cart-plus{
+    font-size: 20px;
+    cursor: pointer;
+}
+.fa-cart-plus:hover{
+    color: #fff;
+}
+.navigation{
+    background-color: rgb(255, 102, 102);
+}
+.nav{
+    width: 1200px;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.nav-item ul{
+    display: flex;
+}
+.nav-item a{
+    text-decoration: none;
+    padding-right: 30px;
+    color: #fff;
+    font-size: 15px;
+}
+.nav-item a:hover{
+    color: black;
+}
+.burger{
+    display: none;
+}
+.fa-bars{
+    color: #fff;
+    font-size: 20px;
+}
+/* ჰედერი */
+
+header{
+    background-image: url(../images/headerimg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+.header-item{
+    width: 1200px;
+    max-width: 100%;
+    margin: auto;
+}
+.about-btn{
+    width: 200px;
+    position: relative;
+    top: 70px;
+    color: #fff;
+}
+.about-btn h1{
+    font-size: 40px;
+}
+.about-btn p{
+    padding-top: 14px;
+}
+.about-btn button{
+    margin-top: 15px;
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+    border: solid 2px #fff;
+    border-radius: 3px;
+    padding: 5px 15px;
+}
+.about-btn button a{
+    text-decoration: none;
+    color: #fff;
+}
+.about-btn button:hover{
+    border: solid 2px #000;
+}
+.about-btn button a:hover{
+    color: #000;
+}
+
+
+/* პირველი სექცია */
+.first-section{
+    margin-top: 30px;
+}
+.container{
+    width: 1200px;
+    max-width: 100%;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left{
+    width: 50%;
+}
+.left h1{
+    font-size: 50px;
+}
+.left h3{
+    font-size: 20px;
+}
+.right{
+    width: 50%;
+}
+.right p{
+    font-size: 22px;
+}
+.col-3{
+    width: 33.3%;
+    max-width: 100%;
+    padding-top: 50px;
+    padding-left: 15px; 
+}
+.box-3{
+    width: 100%;
+}
+.box-3 img{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+}
+.box-3 p{
+    font-size: 16px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* მეორე სექცია */
+.second-section{
+    background-image: url(../images/secon-sec.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+.second-sec-about-btn{
+    width: 1200px;
+    max-width: 100%;
+    margin: auto;
+}
+.second-sec-about-btn-box{
+    position: relative;
+    top: 100px;
+    width: 300px;
+    max-width: 100%;
+    text-align: end;
+    margin-left: auto;
+    
+}
+.second-sec-about-btn-box h1{
+    color: #fff;
+    font-size: 30px;
+}
+.second-sec-about-btn-box p{
+    padding-top: 20px;
+    padding-left: 30px;
+    color: #fff;
+    font-size: 16px;
+}
+.second-sec-about-btn-box button {
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+}
+.second-sec-about-btn-box button a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+/* ფუტერი */
+.foot-box{
+    width: 1200px;
+    max-width: 100%;
+    margin: auto;
+}
+.foot-inside-box{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.foot-inside-box h5{
+    color: #000;
+    font-size: 14px;
+}
+.foot-inside-box h1{
+    padding-top: 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* რესპონსივი */
+
+@media screen and (max-width:700px) {
+    .nav{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+        padding-right: 30px;
+    }
+    .logo{
+        padding-left: 30px;
+    }
+    .nav-item{
+        display: none;
+    }
+    .header-item{
+        padding-left: 30px;
+    }
+    .left{
+        width: 100%;
+        text-align: center;
+        padding: 15px 30px 0px 30px;
+    }
+    .left h1{
+        font-size: 50px;
+    }
+    .left h3{
+        font-size: 20px;
+    }
+    .right{
+        width: 100%;
+        text-align: center;
+        padding: 15px 30px 15px 30px;
+    }
+    .right p{
+        font-size: 22px;
+    }
+    .col-3{
+        width: 100%;
+        max-width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 15px;
+    }
+    .box-3{
+        width: 100%;
+        max-width: 100%;
+    }
+    .box-3 img{
+        width: 100%;
+        max-width: 100%;
+    }
+    .second-sec-about-btn-box{
+        padding-right: 30px;
+    }
+    .foot-inside-box{
+        padding-left: 30px;
+    }
+}
